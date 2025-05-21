@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/4', function () {
-    return view('pertemuan.4');
-});
+
 
 Route::get('/flex', function () {
     return view('pertemuan.flex');
@@ -26,39 +24,31 @@ Route::get('/index', function () {
     return view('pertemuan.index');
 });
 
+Route::get('/js1', function () {
+    return view('pertemuan.js1');
+});
+
 Route::get('/js2', function () {
     return view('pertemuan.js2');
 });
 
-Route::get('/learn', function () {
-    return view('pertemuan.learn');
-});
-
-Route::get('/new', function () {
-    return view('pertemuan.new');
+Route::get('/descendantselector', function () {
+    return view('pertemuan.descendantselector');
 });
 
 Route::get('/pertama', function () {
     return view('pertemuan.pertama');
 });
 
-Route::get('/pertemuan4', function () {
+Route::get('/PERTEMUAN4', function () {
     return view('pertemuan.PERTEMUAN4'); // jika nama file-nya "PERTEMUAN 4.html" dan sudah diubah jadi PERTEMUAN4.blade.php
 });
 
-Route::get('/sibling', function () {
+Route::get('/Sibling', function () {
     return view('pertemuan.Sibling');
 });
 
-Route::get('/tes', function () {
-    return view('pertemuan.tes');
-});
-
-Route::get('/testing2', function () {
-    return view('pertemuan.testing2');
-});
-
-Route::get('/tugaslinktree', function () {
+Route::get('/TugasLinktree', function () {
     return view('pertemuan.TugasLinktree'); 
 });
 
