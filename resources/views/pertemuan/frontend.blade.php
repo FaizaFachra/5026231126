@@ -14,6 +14,7 @@
          <li><a href="{{ url('/TugasLinktree') }}">Tugas Linktree</a></li>
          <li><a href="{{ url('/js1') }}">js1</a></li>
          <li><a href="{{ url('/js2') }}">js2</a></li>
+         <li><a href="{{ url('/indexdanantara') }}">Index Danantara</a></li>
          <li><a href="{{ url('/index') }}">Index</a></li>
     </ul>
 </body>

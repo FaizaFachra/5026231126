@@ -24,6 +24,10 @@ Route::get('/index', function () {
     return view('pertemuan.index');
 });
 
+Route::get('/indexdanantara', function () {
+    return view('pertemuan.indexdanantara');
+});
+
 Route::get('/js1', function () {
     return view('pertemuan.js1');
 });
