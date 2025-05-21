@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/', function () {
+    return view('pertemuan.frontend');
+});
 
 
 Route::get('/flex', function () {
@@ -58,7 +61,5 @@ Route::get('/TugasLinktree', function () {
 
 
 
-Route::get('/frontend', function () {
-    return view('pertemuan.frontend');
-});
+
 
