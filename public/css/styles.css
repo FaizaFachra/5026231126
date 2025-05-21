@@ -1,0 +1,61 @@
+/* POSITIONING TITIK TIGA */
+.link-card {
+    position: relative; /* Container jadi referensi posisi absolut */
+    padding-right: 40px; /* Beri ruang untuk tombol */
+}
+
+.ellipsis-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 5px;
+}
+
+/* MENGATUR KLIK PADA CARD */
+.link-card-content {
+    pointer-events: none; /* Nonaktifkan event di container */
+}
+
+.link-card-text {
+    pointer-events: auto; /* Aktifkan hanya untuk teks */
+}
+
+.link-card .fab.fa-steam {
+    font-size: 28px;
+  }
+
+  .icon-container svg {
+    width: 32px; /* atau sesuaikan */
+    height: 32px;
+    display: block;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .link-card-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .icon-container svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+  
+ 
+  
+  
