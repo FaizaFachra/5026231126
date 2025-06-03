@@ -15,7 +15,19 @@ use App\Http\Controllers\Pegawai2Controller;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () { // internal controller atau inline controller ini boleh tanpa nama
+    return view('welcome');
+});
 
+Route::get('halo', function () {
+	return "<h2>Halo, Selamat datang di tutorial laravel www.malasngoding.com</h2>";
+});
+
+Route::get('blog', function () {
+	return view('blog'); // tidak ada garis bawah karena filenya tidak punya
+});
+
+Route::get('hello', [Link::class,'helloword'] );
 
 Route::get('/', function () {
     return view('frontend');
@@ -72,8 +84,12 @@ Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
 Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class,'kontak']);
+
 Route::get('/pegawai', [PegawaiController::class, 'index']);
-
-
+Route::get('/pegawai/tambah', [PegawaiController::class,'tambah'] );
+Route::post('/pegawai/store', [PegawaiController::class,'store'] );
+Route::get('/pegawai/edit/{id}', [PegawaiController::class,'edit'] );
+Route::post('/pegawai/update', [PegawaiController::class,'update'] );
+Route::get('/pegawai/hapus/{id}', [PegawaiController::class,'hapus'] );
 
 
