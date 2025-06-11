@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SpedaController;
 use App\Http\Controllers\Pegawai2Controller;
 /*
 |--------------------------------------------------------------------------
@@ -93,4 +94,7 @@ Route::post('/pegawai/update', [PegawaiController::class,'update'] );
 Route::get('/pegawai/hapus/{id}', [PegawaiController::class,'hapus'] );
 Route::get('/pegawai/cari', [PegawaiController::class,'cari'] );
 
-
+Route::get('/speda/create', [SpedaController::class, 'create']);
+Route::post('/speda/store', [SpedaController::class, 'store'])->name('speda.store');
+Route::get('/speda', [SpedaController::class, 'index'])->name('speda.index');
+Route::resource('speda', SpedaController::class);
