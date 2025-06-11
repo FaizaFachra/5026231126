@@ -5,7 +5,9 @@ use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SpedaController;
+use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\Pegawai2Controller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -98,3 +100,5 @@ Route::get('/speda/create', [SpedaController::class, 'create']);
 Route::post('/speda/store', [SpedaController::class, 'store'])->name('speda.store');
 Route::get('/speda', [SpedaController::class, 'index'])->name('speda.index');
 Route::resource('speda', SpedaController::class);
+Route::resource('karyawan', KaryawanController::class);
+Route::resource('karyawan', KaryawanController::class)->except(['show', 'edit', 'update']);
