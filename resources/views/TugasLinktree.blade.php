@@ -394,7 +394,7 @@
             <a href="https://pubg.com/en" class="link-card">
                 <div class="link-card-content">
                     <div class="link-thumbnail" style="width: 35px; height: 35px; border-radius: 4px; overflow: hidden;">
-                        <img src="D:\User PC\Documents\FED5026231126\ylxYsDYTzaZQ3q4dsV5p_img-og-pubg (2).jpg" 
+                        <img src="img\ylxYsDYTzaZQ3q4dsV5p_img-og-pubg (2).jpg" 
                              alt="PUBG Official Website" 
                              style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
                     </div>

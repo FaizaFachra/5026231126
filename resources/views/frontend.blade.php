@@ -16,6 +16,11 @@
          <li><a href="{{ url('/js2') }}">js2</a></li>
          <li><a href="{{ url('/indexdanantara') }}">Index Danantara</a></li>
          <li><a href="{{ url('/index') }}">Index</a></li>
+          <li><a href="{{ url('/pegawai') }}">pegawai</a></li>
+          <li><a href="{{ url('/speda') }}">TUGAS CRUD</a></li>
+          <li><a href="{{ url('/keranjangbelanja') }}">Latihan 1</a></li>
+          <li><a href="{{ url('/karyawan2') }}">Latihan 2</a></li>
+          <li><a href="{{ url('/karyawan') }}">Latihan 3</a></li>
     </ul>
 </body>
 </html>

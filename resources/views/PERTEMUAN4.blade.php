@@ -168,7 +168,7 @@
                 <!-- Bagian Vertikal Pertama -->
                 <div class="vertical-section">
                     <div class="card">
-                        <img src="D:\User PC\Documents\FED5026231126\image-4.png" class="card-img-left" alt="Intan Permata">
+                        <img src="img\image-4.png" class="card-img-left" alt="Intan Permata">
                         <div class="card-body">
                             <h5 class="card-title">Intan Permata</h5>
                             <p class="card-text">Baby Sitter<br>Surabaya</p>
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="D:\User PC\Documents\FED5026231126\image-4.png" class="card-img-left" alt="Sumairi">
+                        <img src="img\image-4.png" class="card-img-left" alt="Sumairi">
                         <div class="card-body">
                             <h5 class="card-title">Sumairi</h5>
                             <p class="card-text">Perawat Lansia<br>Pasuruan</p>
@@ -190,7 +190,7 @@
                 <!-- Bagian Vertikal Kedua -->
                 <div class="vertical-section">
                     <div class="card">
-                        <img src="D:\User PC\Documents\FED5026231126\image-4.png" class="card-img-left" alt="Rofiq">
+                        <img src="img\image-4.png" class="card-img-left" alt="Rofiq">
                         <div class="card-body">
                             <h5 class="card-title">Rofiq</h5>
                             <p class="card-text">Supir Pribadi<br>Surabaya</p>
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="D:\User PC\Documents\FED5026231126\image-4.png" class="card-img-left" alt="Nagisa Natsumi">
+                        <img src="img\image-4.png" class="card-img-left" alt="Nagisa Natsumi">
                         <div class="card-body">
                             <h5 class="card-title">Nagisa Natsumi</h5>
                             <p class="card-text">PRT<br>Surabaya</p>
@@ -212,7 +212,7 @@
                 <!-- Bagian Vertikal Ketiga -->
                 <div class="vertical-section">
                     <div class="card">
-                        <img src="D:\User PC\Documents\FED5026231126\image-4.png" class="card-img-left" alt="Andri Wulan">
+                        <img src="img\image-4.png" class="card-img-left" alt="Andri Wulan">
                         <div class="card-body">
                             <h5 class="card-title">Andri Wulan</h5>
                             <p class="card-text">PRT<br>Tuban</p>
@@ -221,7 +221,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="D:\User PC\Documents\FED5026231126\image-4.png" class="card-img-left" alt="Roniah">
+                        <img src="img\image-4.png" class="card-img-left" alt="Roniah">
                         <div class="card-body">
                             <h5 class="card-title">Roniah</h5>
                             <p class="card-text">Baby Sitter<br>Surabaya</p>

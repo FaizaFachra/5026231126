@@ -6,6 +6,8 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SpedaController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\KeranjangController ;
+use App\Http\Controllers\KaryawanController2; //ini importjuga
 use App\Http\Controllers\Pegawai2Controller;
 
 /*
@@ -77,6 +79,26 @@ Route::get('/TugasLinktree', function () {
     return view('TugasLinktree'); 
 });
 
+Route::get('/pegawai', function () {
+    return view('pegawai'); 
+});
+
+Route::get('/speda', function () {
+    return view('speda'); 
+});
+
+Route::get('/keranjangbelanja', function () {
+    return view('keranjangbelanja'); 
+});
+
+Route::get('/karyawan2', function () {
+    return view('karyawan2'); 
+});
+
+Route::get('/karyawan', function () {
+    return view('karyawan'); 
+});
+
 Route::get('/dosen', [Link::class,'index']);
 // Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
 
@@ -100,5 +122,18 @@ Route::get('/speda/create', [SpedaController::class, 'create']);
 Route::post('/speda/store', [SpedaController::class, 'store'])->name('speda.store');
 Route::get('/speda', [SpedaController::class, 'index'])->name('speda.index');
 Route::resource('speda', SpedaController::class);
-Route::resource('karyawan', KaryawanController::class);
-Route::resource('karyawan', KaryawanController::class)->except(['show', 'edit', 'update']);
+Route::get('/karyawan', [KaryawanController::class, 'index'])->name('karyawan.index');
+Route::get('/karyawan/create', [KaryawanController::class, 'create'])->name('karyawan.create');
+Route::post('/karyawan', [KaryawanController::class, 'store'])->name('karyawan.store');
+Route::get('/karyawan/{kodepegawai}/edit', [KaryawanController::class, 'edit'])->name('karyawan.edit');
+Route::put('/karyawan/{kodepegawai}', [KaryawanController::class, 'update'])->name('karyawan.update');
+Route::delete('/karyawan/{kodepegawai}', [KaryawanController::class, 'destroy'])->name('karyawan.destroy');
+Route::get('/keranjangbelanja', [KeranjangController::class,'index'] );
+Route::get('/keranjangbelanja/tambah', [KeranjangController::class,'tambah'] );
+Route::post('/keranjangbelanja/beli', [KeranjangController::class,'store'] );
+Route::get('/keranjangbelanja/hapus/{id}', [KeranjangController::class,'hapus'] );
+//CRUD Karyawan
+Route::get('/karyawan2', [KaryawanController2::class, 'index']);
+Route::get('/karyawan2/tambah', [KaryawanController2::class,'tambah']);
+Route::post('/karyawan2/store', [KaryawanController2::class,'store']);
+Route::get('/karyawan2/hapus/{kodepegawai}', [KaryawanController2::class,'hapus']);
