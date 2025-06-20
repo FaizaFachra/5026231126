@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewkaryawanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
@@ -9,6 +10,8 @@ use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\KeranjangController ;
 use App\Http\Controllers\KaryawanController2; //ini importjuga
 use App\Http\Controllers\Pegawai2Controller;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +56,10 @@ Route::get('/indexdanantara', function () {
 
 Route::get('/js1', function () {
     return view('js1');
+});
+
+Route::get('/newkaryawan', function () {
+    return view('newkaryawan');
 });
 
 Route::get('/js2', function () {
@@ -137,3 +144,7 @@ Route::get('/karyawan2', [KaryawanController2::class, 'index']);
 Route::get('/karyawan2/tambah', [KaryawanController2::class,'tambah']);
 Route::post('/karyawan2/store', [KaryawanController2::class,'store']);
 Route::get('/karyawan2/hapus/{kodepegawai}', [KaryawanController2::class,'hapus']);
+Route::get('/newkaryawan', [NewkaryawanController::class, 'index'])->name('newkaryawan.index');
+Route::get('/newkaryawan/create', [NewkaryawanController::class, 'create'])->name('newkaryawan.create');
+Route::post('/newkaryawan', [NewkaryawanController::class, 'store'])->name('newkaryawan.store');
+Route::delete('/newkaryawan/{id}', [NewkaryawanController::class, 'destroy'])->name('newkaryawan.destroy');

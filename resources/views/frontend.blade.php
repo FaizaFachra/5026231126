@@ -21,6 +21,7 @@
           <li><a href="{{ url('/keranjangbelanja') }}">Latihan 1</a></li>
           <li><a href="{{ url('/karyawan2') }}">Latihan 2</a></li>
           <li><a href="{{ url('/karyawan') }}">Latihan 3</a></li>
+          <li><a href="{{ url('/newkaryawan') }}">EAS</a></li>
     </ul>
 </body>
 </html>
